@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0
+}
+
+html, body{
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antiliased !important;
+  background: #E6ECF0;
+  font-family: 'Helvetica Neue', ­'Helvetica', Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+.content
+{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+  background-color: #fff;
+}
+
+header#main-header
+{
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 1px 0 0 #eff2f3;
+  border-top: 4px solid #882B93;
+  position: relative;
+  z-index: 1;
+}
+
+header#main-header .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header#main-header .content #logo{
+  width: 55px;
+  height: 55px;
+}
+
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header#main-header nav ul li
+{
+  font-size: 18px;
+  color: #667580;
+  font-weight: bold;
+
+  margin-left: 30px
+}
+
+header#main-header nav ul li:hover
+{
+  color: #882B93;
+  cursor: pointer;
+}
+
+header#main-header nav ul li:first-child{
+  margin:0;
+}
+
+main
+{
+  flex-grow: 1;
+  margin: 15px 0;
+}
+
+main .content
+{
+  display: flex;
+  justify-content: center;
+}
+
+main .content .cards
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card
+{
+
+  width: 200px;
+}
+
+div.banner{
+  height: 380px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}
+
+footer
+{
+  height: 72px;
+  background: #667580;
+}
